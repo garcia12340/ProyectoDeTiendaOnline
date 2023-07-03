@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Compartiendo</title>
+    <link rel="icon" type="img/webp" href="../Tienda-Virtual-master/assets/img/logoattas.webp">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="load">
+        <div id="progress"></div>
+    </div>
+    
+    <header>
+        <div class="menu logo-nav">
+            <a href="index.html" class="logo"></a>
+            <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+            <nav class="navigation">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="compartiendo.html">Compartiendo</a></li>
+                
+                <li class="search-icon">
+                  <input type="search" placeholder="Search">
+                  <label class="icon">
+                    <span class="fas fa-search"></span>
+                  </label>
+                </li>
+                <li class="car"><a href="carrito.html" >
+                  <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg></a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="photo-sharing-section">
+            
+            <h1 class="co">¡Fotos de tus mascotas!</h1>
+            <div class="photo-upload">
+                <h3>Sube una foto</h3>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    <button type="submit">Subir</button>
+                </form>
+            </div>
+
+            <div class="photo-gallery">
+                <h3>Galería de fotos</h3>
+                <div class="photos">
+                    <!-- Aquí se mostrarán las fotos subidas -->
+                    <div class="photo">
+                        <img src="assets/img/comp1.jpg" alt="Foto de mascota">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/comp2.jpeg" alt="Foto de mascota">
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/comp3.jpeg" alt="Foto de mascota">
+                    </div>
+
+                    <div class="photo">
+                        <img src="assets/img/comp4.jpg" alt="Foto de mascota">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer footer1">
+            <div class="logo"><img src="assets/img/logo.png" alt=""></div>
+            <ul class="first">
+                <li><i class="fas fa-map-marker"></i>Carretera Masaya KM 10.5</li>
+                <li><i class="fas fa-mobile-phone"></i>77095728</li>
+                <li><i class="fas fa-envelope"></i>manuel03josue@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer footer2">
+            <h3>Informacion</h3>
+            <ul class="second">
+                <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
+                <li><a href="">Nuevo Productos</a></li>
+            </ul>
+        </div>
+        <div class="footer footer3">
+            <h3>Empresa</h3>
+            <ul class="second">
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Aviso Legal</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </div>
+        <div class="footer footer4">
+            <h3>Bolentin Informativo</h3>
+            <p>Y reciba un cupón de $20 por la primera compra</p>
+        </div>
+    </footer>
+    
+    </script>
+    <script src="assets/js/busqueda.js"></script>
+</body>
+</html>

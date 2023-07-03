@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Pet Shop</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link rel="icon" type="img/webp" href="../Tienda-Virtual-master/assets/img/logoattas.webp">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  </head>
+  <body>
+    <div id="load">
+        <img src="assets/img/cargando.gif" alt="Loading..." />
+    </div>
+
+    <header>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo"></a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="foro.html">Foro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="compartiendo.html">Compartiendo</a></li>
+            
+            <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li class="car"><a href="carrito.html" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></a>
+            </li>
+            <li class="user-icon"><a href="login.html">
+              <svg class="bi bi-person" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1c2.67 0 8 1.34 8 4V16H0v-2c0-2.66 5.33-4 8-4z"/>
+               </svg></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<div class="slider">
+  <ul>
+    <li><img src="assets\img\slide1.jpg" alt="..."></li>
+    <li><img src="assets\img\slide2.jpg" alt="..."></li>
+    <li><img src="assets\img\slide3.jpg" alt="..."></li>
+  </ul>
+</div>
+
+
+  <div class="container-index">
+
+    <div class="container-circulos">
+      <div class="container-imagen">
+        <img src="assets/img/alimentos.jpg" class="circulo">
+        <h2>Alimentos</h2>
+      </div>
+      <div class="container-imagen">
+        <img src="assets/img/ropa.jpg" class="circulo">
+        <h2>Ropa</h2>
+      </div>
+      <div class="container-imagen">
+        <img src="assets/img/juguetes.jpg" class="circulo">
+        <h2>Juguetes</h2>
+      </div>
+    </div>
+
+    <div class="petFood">
+      <div class="title">
+          <h3>La mejor comida para mascotas</h3>
+      </div>
+      <div class="categoryFood">
+          <ul>
+              <li>Nuevo Productos</li>
+              <li>Producto destacado</li>
+          </ul>
+      </div>
+
+      <div class="foodContent">
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product1.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                      <li>C$70</li>
+                      <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product2.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product3.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product4.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product5.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product6.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product7.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card">
+              <div class="images">
+                  <img src="assets\img\product8.png" alt="">
+
+                  <div class="details">
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fas fa-eye"></i>
+                      <i class="fas fa-heart"></i>
+                  </div>
+              </div>
+
+              <div class="text">
+                  <div class="ratting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+                  <h3>Tincidunt Ut Laorent</h3>
+                  <ul class="price">
+                    <li>C$70</li>
+                    <li>C$85</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="foodie">
+    <div class="petFoods swiper mySwiper">
+        <div class="fooder swiper-wrapper">
+            <div class="card swiper-slide">
+                <img src="assets\img\food1.avif" alt="">
+            </div>
+            <div class="card swiper-slide">
+                <img src="assets\img\food2.avif" alt="">
+            </div>
+            <div class="card swiper-slide">
+                <img src="assets\img\food3.avif" alt="">
+            </div>
+            <div class="card swiper-slide">
+                <img src="assets\img\food4.avif" alt="">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="specialFood">
+    <div class="title">
+        <h3>Especiales</h3>
+    </div>
+
+    <div class="specialContent swiper mySwiper">
+        <div class="specialFood swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="images">
+                    <img src="assets\img\product1.png" alt="">
+
+                    <div class="details">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="ratting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tincidunt Ut Laorent</h3>
+                    <ul class="price">
+                        <li>$2.00</li>
+                        <li>$5.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="images">
+                    <img src="assets\img\product2.png" alt="">
+
+                    <div class="details">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="ratting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tincidunt Ut Laorent</h3>
+                    <ul class="price">
+                        <li>$2.00</li>
+                        <li>$5.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="images">
+                    <img src="assets\img\product3.png" alt="">
+
+                    <div class="details">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="ratting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tincidunt Ut Laorent</h3>
+                    <ul class="price">
+                        <li>$2.00</li>
+                        <li>$5.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="images">
+                    <img src="assets\img\product4.png" alt="">
+
+                    <div class="details">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="ratting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>+
+                    </div>
+                    <h3>Tincidunt Ut Laorent</h3>
+                    <ul class="price">
+                        <li>$2.00</li>
+                        <li>$5.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="images">
+                    <img src="assets\img\product5.png" alt="">
+
+                    <div class="details">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <div class="ratting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tincidunt Ut Laorent</h3>
+                    <ul class="price">
+                        <li>$2.00</li>
+                        <li>$5.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div id="map"></div>
+
+<div class="sale">
+    <div class="card1"></div>
+    <div class="card2"></div>
+</div>
+
+
+<footer>
+    <div class="footer footer1">
+        <div class="logo"><img src="assets/img/logo.png" alt=""></div>
+        <ul class="first">
+            <li><i class="fas fa-map-marker"></i>Carretera Masaya KM 10.5</li>
+            <li><i class="fas fa-mobile-phone"></i>77095728</li>
+            <li><i class="fas fa-envelope"></i>manuel03josue@gmail.com</li>
+        </ul>
+    </div>
+    <div class="footer footer2">
+        <h3>Informacion</h3>
+        <ul class="second">
+            <li><a href="nosotros.html" target="_blank">Nosotros</a></li>
+            <li><a href="">Nuevo Productos</a></li>
+        </ul>
+    </div>
+    <div class="footer footer3">
+        <h3>Empresa</h3>
+        <ul class="second">
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Aviso Legal</a></li>
+            <li><a href="contacto.html">Contáctenos</a></li>
+        </ul>
+    </div>
+    <div class="footer footer4">
+        <h3>Bolentin Informativo</h3>
+        <p>Y reciba un cupón de $20 por la primera compra</p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="assets/js/busqueda.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/mapa.js"></script>
+
+</body>
+</html>
+
